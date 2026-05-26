@@ -7,7 +7,39 @@
     <title>Acme App</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <!-- Start Coding Here -->
+  <body class="bg-slate-100 m-0 p-0 box-border">
+    <header class="m-6">
+      <nav class="navbar rounded-full m-0 p-10 w-50 h-20 flex justify-between items-center bg-white shadow-md">
+        <a href="#" class="logo" style="text-decoration: none;">
+          <p class="flex font-black text-4xl pl-20">Acme</p>
+        </a>
+        <div>
+          <ul class="nav-wrapper flex-row flex gap-10 text-xl pr-10 ">
+            <li class="nav-link hover:text-[#5E44FF] hover:underline underline-offset-1"><a href="#">Home</a></li>
+            <li class="nav-link hover:text-[#5E44FF] hover:underline underline-offset-1"><a href="#">Feature</a></li>
+            <li class="nav-link hover:text-[#5E44FF] hover:underline underline-offset-1"><a href="#">Pricing</a></li>
+            <li class="nav-link hover:text-[#5E44FF] hover:underline underline-offset-1"><a href="#">Contact</a></li> 
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-section flex flex-col items-center justify-center my-32">
+        <div class="mb-8">
+          <span class="inline-flex items-center px-4 py-1 rounded-full bg-indigo-100 text-indigo-600 font-medium text-sm shadow">
+            🌈 Acme Productivity App
+          </span>
+        </div>
+        <h1 class="text-5xl md:text-6xl font-black text-gray-900 text-center mb-4">
+          Boost Your <span class="text-indigo-500">Product</span>ivity
+        </h1>
+        <p class="text-lg md:text-xl text-gray-700 font-medium text-center mb-8 m-5">
+          Streamline your workflow with our all-in-one productivity app.
+        </p>
+        <a href="#" class="px-9 py-5 rounded-3xl bg-gray-900 text-white font-semibold text-lg shadow hover:bg-gray-800 transition">
+          Start Free Trial
+        </a>
+      </section>
+    </main>
   </body>
 </html>
