@@ -8,40 +8,55 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-slate-100 m-0 p-0 box-border">
-    <header class="m-6">
-      <nav class="navbar rounded-full m-0 p-10 w-50 h-20 flex justify-between items-center bg-white shadow-md">
-        <a href="#" class="relative inline-flex items-center pl-20" style="text-decoration: none;">
-          <p class="font-black text-4xl">Acme</p>
+    <header class="m-3 md:m-6 sticky top-0 z-40">
+      <nav class="navbar rounded-full m-0 px-6 md:p-10 w-auto md:w-50 h-16 md:h-20 flex justify-between items-center bg-white shadow-md">
+        <a href="#" class="relative inline-flex items-center pl-6 md:pl-20" style="text-decoration: none;">
+          <p class="font-black text-3xl md:text-4xl">Acme</p>
           <img src="img/Ellipse 1.png" alt="" class="absolute top-2 -right-3 h-3 w-3 object-contain" />
-        <a href="#" class="logo" style="text-decoration: none;">
         </a>
-        <div>
-          <ul class="nav-wrapper flex-row flex gap-10 text-xl pr-10 ">
+        <button class="block md:hidden p-2 text-2xl" id="menu-btn">&#9776;</button>
+        <div id="nav-menu" class="hidden md:block">
+          <ul class="nav-wrapper flex-row flex gap-10 text-xl pr-10">
             <li class="nav-link hover:text-[#5E44FF] hover:underline underline-offset-1"><a href="#">Home</a></li>
             <li class="nav-link hover:text-[#5E44FF] hover:underline underline-offset-1"><a href="#">Feature</a></li>
             <li class="nav-link hover:text-[#5E44FF] hover:underline underline-offset-1"><a href="#">Pricing</a></li>
-            <li class="nav-link hover:text-[#5E44FF] hover:underline underline-offset-1"><a href="#">Contact</a></li> 
+            <li class="nav-link hover:text-[#5E44FF] hover:underline underline-offset-1"><a href="#">Contact</a></li>
           </ul>
         </div>
       </nav>
+      <div id="mobile-menu" class="hidden md:hidden absolute left-0 right-0 mx-2 mt-1 rounded-2xl bg-white shadow-md px-6 py-6 z-50">
+        <ul class="flex flex-col gap-6 text-xl text-center">
+          <li><a href="#" class="text-[#5E44FF] underline underline-offset-4">Home</a></li>
+          <li class="hover:text-[#5E44FF]"><a href="#">Features</a></li>
+          <li class="hover:text-[#5E44FF]"><a href="#">Pricing</a></li>
+          <li class="hover:text-[#5E44FF]"><a href="#">Contact</a></li>
+        </ul>
+      </div>
     </header>
+
     <main>
-      <section class="hero-section flex flex-col items-center justify-center my-32">
+      <section class="hero-section flex flex-col items-center justify-center my-16 md:my-32 px-6 md:px-0">
         <div class="mb-8">
           <span class="inline-flex items-center px-4 py-1 rounded-full bg-indigo-100 text-indigo-600 font-medium text-sm shadow">
             🌈 Acme Productivity App
           </span>
         </div>
-        <h1 class="text-5xl md:text-6xl font-black text-gray-900 text-center mb-4">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 text-center mb-4">
           Boost Your <span class="text-indigo-500">Product</span>ivity
         </h1>
-        <p class="text-lg md:text-xl text-gray-700 font-medium text-center mb-8 m-5">
+        <p class="text-base md:text-lg lg:text-xl text-gray-700 font-medium text-center mb-8 m-5">
           Streamline your workflow with our all-in-one productivity app.
         </p>
-        <a href="#" class="px-9 py-5 rounded-3xl bg-gray-900 text-white font-semibold text-lg shadow hover:bg-gray-800 transition">
+        <a href="#" class="w-full md:w-auto text-center px-9 py-5 rounded-3xl bg-gray-900 text-white font-semibold text-lg shadow hover:bg-gray-800 transition">
           Start Free Trial
         </a>
       </section>
+
+    <script>
+      const btn = document.getElementById('menu-btn');
+      const menu = document.getElementById('mobile-menu');
+      btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+    </script>
 
 
       
