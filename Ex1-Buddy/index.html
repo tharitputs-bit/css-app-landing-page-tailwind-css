@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Browse by Job Categories</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Poppins:wght@700;800&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        screens: {
+          sm: "600px",
+          md: "768px",
+          lg: "992px",
+          xl: "1200px",
+        },
+        extend: {
+          fontFamily: {
+            heading: ["Poppins", "sans-serif"],
+            body:    ["DM Sans", "sans-serif"],
+          },
+          colors: {
+            brand: { DEFAULT: "#FF6B35", light: "#FFF0EA" },
+            navy:  "#183B56",
+          },
+          boxShadow: {
+            card:       "0 2px 12px rgba(0,0,0,0.06)",
+            "card-hover": "0 8px 32px rgba(255,107,53,0.18)",
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+
+<body class="font-body min-h-screen bg-white flex items-center justify-center py-16 px-4">
+
+  <section aria-labelledby="section-heading" class="w-full max-w-5xl mx-auto">
+    <header class="text-center mb-14">
+      <h1 id="section-heading" class="font-heading text-3xl sm:text-4xl font-bold text-navy leading-tight">
+        Browse by<br />
+        <mark class="bg-[linear-gradient(to_top,#FFA97D_50%,transparent_50%)] [background-color:transparent] text-navy not-italic">Job</mark>
+        Categories
+      </h1>
+    </header>
+
+    <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" role="list">
+
+      <!-- Digital Marketing -->
+      <li>
+        <article
+          aria-label="Digital Marketing – 143 Jobs Opened"
+          class="group bg-white border border-gray-100 rounded-2xl p-8 shadow-card
+                 hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300
+                 flex flex-col h-full cursor-pointer min-h-[200px]"
+        >
+          <div aria-hidden="true" class="w-16 h-16 rounded-full bg-brand-light group-hover:bg-brand flex items-center justify-center transition-colors duration-300">
+            <img src="img/Digital-marketing.png" alt="" width="32" height="32" class="object-contain group-hover:brightness-0 group-hover:invert transition-[filter] duration-300" />
+          </div>
+
+          <footer class="mt-auto">
+            <h2 class="font-semibold text-navy text-base mb-1">Digital Marketing</h2>
+            <div class="flex items-center justify-between">
+              <p class="text-sm text-gray-400">143 Jobs Opened</p>
+              <button aria-label="Browse Digital Marketing jobs" class="group/btn w-8 h-8 rounded-full border border-gray-200 hover:bg-brand hover:border-brand hover:translate-x-0.5 flex items-center justify-center shrink-0 transition-all duration-200">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-brand group-hover/btn:text-white transition-colors duration-200">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </footer>
+        </article>
+      </li>
+
+      <!-- Art & Design -->
+      <li>
+        <article
+          aria-label="Art and Design – 110 Jobs Opened"
+          class="group bg-white border border-gray-100 rounded-2xl p-8 shadow-card
+                 hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300
+                 flex flex-col h-full cursor-pointer min-h-[200px]"
+        >
+          <div aria-hidden="true" class="w-16 h-16 rounded-full bg-brand-light group-hover:bg-brand flex items-center justify-center transition-colors duration-300">
+            <img src="img/Art&Design.png" alt="" width="32" height="32" class="object-contain group-hover:brightness-0 group-hover:invert transition-[filter] duration-300" />
+          </div>
+
+          <footer class="mt-auto">
+            <h2 class="font-semibold text-navy text-base mb-1">Art &amp; Design</h2>
+            <div class="flex items-center justify-between">
+              <p class="text-sm text-gray-400">110 Jobs Opened</p>
+              <button aria-label="Browse Art and Design jobs" class="group/btn w-8 h-8 rounded-full border border-gray-200 hover:bg-brand hover:border-brand hover:translate-x-0.5 flex items-center justify-center shrink-0 transition-all duration-200">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-brand group-hover/btn:text-white transition-colors duration-200">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </footer>
+        </article>
+      </li>
+
+      <!-- Accounting -->
+      <li>
+        <article
+          aria-label="Accounting – 158 Jobs Opened"
+          class="group bg-gray-50 border border-gray-100 rounded-2xl p-8 shadow-card
+                 hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300
+                 flex flex-col h-full cursor-pointer min-h-[200px]"
+        >
+          <div aria-hidden="true" class="w-16 h-16 rounded-full bg-brand flex items-center justify-center">
+            <img src="img/Accounting.png" alt="" width="32" height="32" class="object-contain brightness-0 invert" />
+          </div>
+
+          <footer class="mt-auto">
+            <h2 class="font-semibold text-navy text-base mb-1">Accounting</h2>
+            <div class="flex items-center justify-between">
+              <p class="text-sm text-gray-400">158 Jobs Opened</p>
+              <button aria-label="Browse Accounting jobs" class="group/btn w-8 h-8 rounded-full border border-gray-200 hover:bg-brand hover:border-brand hover:translate-x-0.5 flex items-center justify-center shrink-0 transition-all duration-200">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-brand group-hover/btn:text-white transition-colors duration-200">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </footer>
+        </article>
+      </li>
+
+      <!-- Photography -->
+      <li>
+        <article
+          aria-label="Photography – 95 Jobs Opened"
+          class="group bg-white border border-gray-100 rounded-2xl p-8 shadow-card
+                 hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300
+                 flex flex-col h-full cursor-pointer min-h-[200px]"
+        >
+          <div aria-hidden="true" class="w-16 h-16 rounded-full bg-brand-light group-hover:bg-brand flex items-center justify-center transition-colors duration-300">
+            <img src="img/Photograohy.png" alt="" width="32" height="32" class="object-contain group-hover:brightness-0 group-hover:invert transition-[filter] duration-300" />
+          </div>
+
+          <footer class="mt-auto">
+            <h2 class="font-semibold text-navy text-base mb-1">Photography</h2>
+            <div class="flex items-center justify-between">
+              <p class="text-sm text-gray-400">95 Jobs Opened</p>
+              <button aria-label="Browse Photography jobs" class="group/btn w-8 h-8 rounded-full border border-gray-200 hover:bg-brand hover:border-brand hover:translate-x-0.5 flex items-center justify-center shrink-0 transition-all duration-200">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-brand group-hover/btn:text-white transition-colors duration-200">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </footer>
+        </article>
+      </li>
+
+      <!-- Copy Writing -->
+      <li>
+        <article
+          aria-label="Copy Writing – 113 Jobs Opened"
+          class="group bg-white border border-gray-100 rounded-2xl p-8 shadow-card
+                 hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300
+                 flex flex-col h-full cursor-pointer min-h-[200px]"
+        >
+          <div aria-hidden="true" class="w-16 h-16 rounded-full bg-brand-light group-hover:bg-brand flex items-center justify-center transition-colors duration-300">
+            <img src="img/Copy writing.png" alt="" width="32" height="32" class="object-contain group-hover:brightness-0 group-hover:invert transition-[filter] duration-300" />
+          </div>
+
+          <footer class="mt-auto">
+            <h2 class="font-semibold text-navy text-base mb-1">Copy Writing</h2>
+            <div class="flex items-center justify-between">
+              <p class="text-sm text-gray-400">113 Jobs Opened</p>
+              <button aria-label="Browse Copy Writing jobs" class="group/btn w-8 h-8 rounded-full border border-gray-200 hover:bg-brand hover:border-brand hover:translate-x-0.5 flex items-center justify-center shrink-0 transition-all duration-200">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-brand group-hover/btn:text-white transition-colors duration-200">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </footer>
+        </article>
+      </li>
+
+      <!-- Music -->
+      <li>
+        <article
+          aria-label="Music – 55 Jobs Opened"
+          class="group bg-white border border-gray-100 rounded-2xl p-8 shadow-card
+                 hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300
+                 flex flex-col h-full cursor-pointer min-h-[200px]"
+        >
+          <div aria-hidden="true" class="w-16 h-16 rounded-full bg-brand-light group-hover:bg-brand flex items-center justify-center transition-colors duration-300">
+            <img src="img/Music.png" alt="" width="32" height="32" class="object-contain group-hover:brightness-0 group-hover:invert transition-[filter] duration-300" />
+          </div>
+
+          <footer class="mt-auto">
+            <h2 class="font-semibold text-navy text-base mb-1">Music</h2>
+            <div class="flex items-center justify-between">
+              <p class="text-sm text-gray-400">55 Jobs Opened</p>
+              <button aria-label="Browse Music jobs" class="group/btn w-8 h-8 rounded-full border border-gray-200 hover:bg-brand hover:border-brand hover:translate-x-0.5 flex items-center justify-center shrink-0 transition-all duration-200">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-brand group-hover/btn:text-white transition-colors duration-200">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </footer>
+        </article>
+      </li>
+
+      <!-- Human Resources -->
+      <li>
+        <article
+          aria-label="Human Resources – 25 Jobs Opened"
+          class="group bg-white border border-gray-100 rounded-2xl p-8 shadow-card
+                 hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300
+                 flex flex-col h-full cursor-pointer min-h-[200px]"
+        >
+          <div aria-hidden="true" class="w-16 h-16 rounded-full bg-brand-light group-hover:bg-brand flex items-center justify-center transition-colors duration-300">
+            <img src="img/human resouces.png" alt="" width="32" height="32" class="object-contain group-hover:brightness-0 group-hover:invert transition-[filter] duration-300" />
+          </div>
+
+          <footer class="mt-auto">
+            <h2 class="font-semibold text-navy text-base mb-1">Human Resources</h2>
+            <div class="flex items-center justify-between">
+              <p class="text-sm text-gray-400">25 Jobs Opened</p>
+              <button aria-label="Browse Human Resources jobs" class="group/btn w-8 h-8 rounded-full border border-gray-200 hover:bg-brand hover:border-brand hover:translate-x-0.5 flex items-center justify-center shrink-0 transition-all duration-200">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-brand group-hover/btn:text-white transition-colors duration-200">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </footer>
+        </article>
+      </li>
+
+<!-- Explore -->
+<li>
+  <article
+    aria-label="Explore 30 more job categories"
+    class="relative overflow-hidden bg-brand rounded-2xl p-8
+           flex flex-row items-center justify-between
+           h-full min-h-[200px] cursor-pointer"
+    <svg aria-hidden="true" class="absolute inset-0 w-full h-full" viewBox="0 0 300 200" fill="none" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <path d="M-20 40 C 40 20, 80 60, 140 35 S 220 10, 320 45"  stroke="white" stroke-opacity="0.25" stroke-width="1.5" fill="none" />
+      <path d="M-20 80 C 30 55, 90 100, 160 70 S 250 40, 320 85" stroke="white" stroke-opacity="0.25" stroke-width="1.5" fill="none" />
+      <path d="M-20 150 C 50 125, 110 165, 180 140 S 260 110, 320 155" stroke="white" stroke-opacity="0.25" stroke-width="1.5" fill="none" />
+      <path d="M-20 185 C 60 160, 120 195, 200 170 S 270 145, 320 180" stroke="white" stroke-opacity="0.25" stroke-width="1.5" fill="none" />
+    </svg>
+
+    <p class="font-heading font-bold text-white text-xl leading-snug relative z-10">
+      Explore<br />30 More<br />Categories
+    </p>
+
+    <button
+      aria-label="Explore more categories"
+      class="relative z-10 shrink-0 transition-transform duration-200 hover:translate-x-1"
+    >
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12h14M12 5l7 7-7 7" />
+      </svg>
+    </button>
+  </article>
+</li>
+
+</ul>
+
+</section>
+
+</body>
+
+</html>
